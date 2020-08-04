@@ -1,0 +1,46 @@
+
+html {
+  margin: 0;
+  transition: all .5s;
+  font-family: "Champagne_limousines";
+}
+
+.container {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover{
+  color: lightgrey;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #53D769;
+}
+
+form {
+    width: 80%;
+    padding: 1em;
+}
+
+label {
+    width: 100px;
+    text-align: left;
+    font-size: 1em;
+    margin-right: 1rem;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 50%;
+    height: 1.5em;
+    border-radius: 10px;
+    border: 1px solid #999;
+}
+
+h3 {
+  color: black;
+}

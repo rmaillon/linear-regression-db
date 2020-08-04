@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div id="titre-text">
+                <u>Machine Learning App with Flask</u>
+            </div>
+        </div>
+    </header>
+
+    <div class="result">
+        {% if name %}
+        <h3>{{ name }}, your salary estimation is ${{ salary }}</h3>
+        {% else %}
+        <h3>Your salary estimation is ${{ salary }}</h3>
+        {% endif %}
+        <br/>
+        <div class="home-page">
+            <a href="{{ url_for('index') }}"> New prediction? </a>
+        </div>
+    </div>
+  </body>
+ </html>
